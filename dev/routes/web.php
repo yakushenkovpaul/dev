@@ -12,6 +12,6 @@
 */
 
 $router->get('/', function () use ($router) {
-		mail('yakushenkovpaul@gmail.com', 'test', 'hello world');
+		// mail('yakushenkovpaul@gmail.com', 'test', 'hello world');
 		return 'mail';
 });
