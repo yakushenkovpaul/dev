@@ -14,8 +14,3 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
-$router->post('hello/', function () use ($router, $request) {
-	$name = $request->input('name');
-	return $name;
-});
