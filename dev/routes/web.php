@@ -12,6 +12,10 @@
 */
 
 $router->get('/', function () use ($router) {
-		mail('yakushenkovpaul@gmail.com', 'test', 'hello world');
-		return 'mail';
+    return $router->app->version();
+});
+
+$router->post('hello/', function () use ($router, $request) {
+	$name = $request->input('name');
+	return $name;
 });
